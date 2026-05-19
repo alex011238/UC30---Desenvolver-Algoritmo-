@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburgueria</title>
+
+    <link href="https://s2-oglobo.glbimg.com/4OHq4WCXsPWKwUI8rq8RK1667_Y=/0x0:1024x683/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2023/o/r/xj6csXSZee6RtWBqqVfQ/hamburguer-picanha-2.jfif" rel="stylesheet">
+
+    <style>
+        body{
+            background-color: #b59411;
+        }
+
+        .banner-img{
+            height: 950px;
+            object-fit: cover;
+        }
+
+        .titulo{
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .botoes{
+            margin-top: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Burger House</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Início</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cardápio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pedidos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="alert alert-warning alert-dismissible fade show text-center m-0" role="alert">
+         Promoção: Compre 2 hambúrgueres e ganhe 1 refrigerante grátis!
+        
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1200"
+                     class="d-block w-100 banner-img">
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=1200"
+                     class="d-block w-100 banner-img">
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?q=80&w=1200"
+                     class="d-block w-100 banner-img">
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+
+    <div class="container titulo">
+        <h1 class="display-4">Burger House</h1>
+
+        <p class="lead">
+            Os hambúrgueres mais saborosos desse planeta!
+        </p>
+    </div>
+
+    <div class="container botoes">
+        <button class="btn btn-danger btn-lg">
+            Ver Cardápio
+        </button>
+
+        <button class="btn btn-success btn-lg">
+            Fazer Pedido
+        </button>
+
+        <button class="btn btn-dark btn-lg">
+            Contato
+        </button>
+    </div>
+
+</body>
+</html>
