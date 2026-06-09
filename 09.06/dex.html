@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Preferências do Usuário</title>
+
+    <style>
+        body.claro {
+            background-color: white;
+            color: black;
+        }
+
+        body.escuro {
+            background-color: #222;
+            color: white;
+        }
+
+        .container {
+            margin: 50px;
+        }
+    </style>
+</head>
+<body class="{{ tema }}">
+
+<div class="container">
+    <h1>
+        {% if nome %}
+            Olá, {{ nome }}!
+        {% else %}
+            Bem-vindo!
+        {% endif %}
+    </h1>
+
+    <form action="/salvar" method="POST">
+        <label>Nome:</label><br>
+        <input type="text" name="nome" value="{{ nome }}"><br><br>
+
+        <label>Tema:</label><br>
+        <select name="tema">
+            <option value="claro" {% if tema == 'claro' %}selected{% endif %}>
+                Claro
+            </option>
+            <option value="escuro" {% if tema == 'escuro' %}selected{% endif %}>
+                Escuro
+            </option>
+        </select>
+
+        <br><br>
+        <button type="submit">Salvar Preferências</button>
+    </form>
+</div>
+
+</body>
+</html>
