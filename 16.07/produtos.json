@@ -1,0 +1,20 @@
+[
+    {
+        "nome": "Notebook",
+        "preco": 3500,
+        "estoqie": 10
+    }
+    {
+        "nome": "Mouse",
+        "preco": 80,
+        "estoque": 35
+    },
+    {
+        "nome": "Teclado",
+        "preco": 150,
+        "estoque: 20"
+    }
+
+
+
+]
